@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- ======================================================
+*** A Simple Password Genarator from Hacker TESLA       ***
+*** By ECMAScript [ JS ]                                ***
+*** Follow of Develop this code on github               ***
+*** Github : https://github.com/hacker-tesla            ***
+======================================================= -->
+
+<html lang="en">
+
+
+
+<head>
+    <!-- meta section -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Password Genarator</title>
+
+    <!-- link section -->
+    <link rel="stylesheet" href="genarator.css">
+    <link rel="stylesheet" href="./../frameworkLinkUP/css/all.css">
+</head>
+
+
+
+<body>
+
+    <h1>Password Genarator by HACKER TESLA</h1>
+    <h2 id="js">By ECMAScript [ JS ]</h2>
+
+    <main>
+        <h2>Password Genarator</h2>
+
+        <!-- Result box that show genarated password -->
+        <div class="result_box">
+            <span id="result"></span>
+            <button id="clipboard">
+                <i class="fa fa-clipboard"></i>
+            </button>
+        </div>
+
+        <!-- setting section with multiple facility like uppercase, number etc. -->
+        <div class="settings">
+            <div class="setting">
+                <label for="length">
+                    Password Length
+                </label>
+                <input type="number"
+                    id="length"
+                    min="4"
+                    max="30"
+                    value="20"
+                />
+            </div>
+
+            <div class="setting">
+                <label for="uppercase">
+                    Include Uppercase Letter
+                </label>
+                <input type="checkbox"
+                    id="uppercase"
+                    checked
+                />
+            </div>
+
+            <div class="setting">
+                <label for="lowercase">
+                    Include Lowercase Letter
+                </label>
+                <input type="checkbox"
+                    id="lowercase"
+                    checked
+                />
+            </div>
+
+            <div class="setting">
+                <label for="numbers">
+                    Include Numbers
+                </label>
+                <input type="checkbox"
+                    id="numbers"
+                    checked
+                />
+            </div>
+
+            <div class="setting">
+                <label for="symbols">
+                    Include Symbols
+                </label>
+                <input type="checkbox"
+                    id="symbols"
+                    checked
+                />
+            </div>
+
+            <button id="genarate">
+                GENARATE PASSWORD
+            </button>
+        </div>
+    </main>    
+
+    <script src="genarator.js"></script>
+</body>
+
+
+
+</html>

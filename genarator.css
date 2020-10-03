@@ -1,0 +1,107 @@
+/*** ======================================================
+*** A Simple Password Genarator from Hacker TESLA       ***
+*** By ECMAScript [ JS ]                                ***
+*** Follow of Develop this code on github               ***
+*** Github : https://github.com/hacker-tesla            ***
+*** Portfolio : http://hpcscienceclub.cf/profile.html   ***
+======================================================= ***/
+
+*{
+    margin: 0;
+    padding:  0;
+}
+
+:root{
+    --cover_background_color: #138fa5;
+    --defult_text_color: #fff;
+    --box_background_color: #30303b;
+    --box_shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+body{
+    background-color: var(--cover_background_color, #138fa5);
+    color: var(--defult_text_color, #fff);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 90vh;
+}
+
+h2{
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+#js{
+    font-family: monospace;
+}
+
+input[type='checkbox']{
+    margin-right: 0;
+}
+
+main{
+    background-color: var(--box_background_color, #30303b);
+    box-shadow: var(--box_shadow, 0px 2px 10px rgba(255, 255, 255, 0.2) );
+    
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.result_box{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 30px;
+    width: 100%;
+}
+
+.result_box #result{
+    word-wrap: break-word;
+    max-width: calc(100%-40px);
+}
+
+.result_box button{
+    font-size: 20px;
+    position: absolute;
+    right: 2px;
+    height: 50px;
+    width: 50px;
+}
+
+button{
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: var(--cover_background_color, #138fa5);
+}
+
+#genarate{
+    display: block;
+    width: 100%;
+}
+
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 400px){
+    .result_box{
+        font-size: 14px;
+    }
+}
